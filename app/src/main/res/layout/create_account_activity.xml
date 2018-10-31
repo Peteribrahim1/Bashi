@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.hp.bashi.CreateAccountActivity">
+    <EditText
+        android:id="@+id/create_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Lastname"
+        />
+    <EditText
+        android:layout_below="@id/create_last_name"
+        android:id="@+id/create_other_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Othernames"
+        />
+    <EditText
+        android:layout_below="@id/create_other_name"
+        android:id="@+id/create_occupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Occupation"
+        />
+    <EditText
+        android:layout_below="@id/create_occupation"
+        android:id="@+id/create_State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="State"
+        />
+    <EditText
+        android:layout_below="@id/create_State"
+        android:id="@+id/create_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="email"
+        />
+    <EditText
+        android:layout_below="@id/create_email"
+        android:id="@+id/create_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="password"/>
+    <EditText
+        android:layout_below="@id/create_password"
+        android:id="@+id/create_password_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="password again"/>
+    <Button
+        android:layout_below="@id/create_password_repeat"
+        android:id="@+id/create_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createAccount"
+        android:text="Submit"
+        android:background="#3799ef"
+        android:textColor="#ffffff"
+        />
+
+
+
+</LinearLayout>

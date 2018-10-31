@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "603849481012",
+    "firebase_url": "https://bashi-a18b5.firebaseio.com",
+    "project_id": "bashi-a18b5",
+    "storage_bucket": "bashi-a18b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603849481012:android:cc9f28e3197f6d25",
+        "android_client_info": {
+          "package_name": "com.example.hp.bashi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603849481012-1hekp83uem601v2njmrsgtv7ddlko76o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXMJthKYlyFW-Wck-PNa61tCL3HV68Syo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
