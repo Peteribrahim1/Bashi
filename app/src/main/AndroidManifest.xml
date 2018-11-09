@@ -21,7 +21,8 @@
         <activity android:name=".Login" />
         <activity android:name=".CreateAccountActivity" />
         <activity android:name=".Index" />
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Phone" />
+        <activity android:name=".Loan"></activity>
     </application>
 
 </manifest>

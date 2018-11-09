@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.example.hp.bashi.Loan">
+
+    <TextView
+        android:id="@+id/welcome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to bashi!"
+        android:textColor="#3799ef"
+        android:textSize="33dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="28dp"
+        tools:layout_editor_absoluteX="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp" />
+
+    <EditText
+        android:id="@+id/Account_name"
+        android:layout_below="@id/welcome2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:hint="Account name"
+        />
+    <EditText
+        android:id="@+id/Account_number"
+        android:layout_below="@id/Account_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Account number"
+        />
+    <EditText
+        android:id="@+id/BVN"
+        android:layout_below="@id/Account_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="BVN"
+        />
+    <EditText
+        android:id="@+id/Amount"
+        android:layout_below="@id/BVN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="How much do you want to borrow?"
+        />
+
+    <Button
+        android:id="@+id/Apply"
+        android:layout_below="@id/Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:textStyle="bold"
+        android:background="#3799ef"
+        android:textColor="#ffffff"
+        />
+
+
+
+
+
+</LinearLayout>

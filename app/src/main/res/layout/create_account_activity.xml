@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="19dp"
     android:orientation="vertical"
     tools:context="com.example.hp.bashi.CreateAccountActivity">
     <EditText
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="Lastname"
+        android:hint="lastname"
         />
     <EditText
         android:layout_below="@id/create_last_name"
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="Othernames"
+        android:hint="othernames"
         />
     <EditText
         android:layout_below="@id/create_other_name"
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="Occupation"
+        android:hint="occupation"
         />
     <EditText
         android:layout_below="@id/create_occupation"
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="State"
+        android:hint="state"
         />
     <EditText
         android:layout_below="@id/create_State"
@@ -52,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:inputType="textPassword"
         android:hint="password"/>
     <EditText
         android:layout_below="@id/create_password"
@@ -59,7 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:hint="password again"/>
+        android:inputType="textPassword"
+        android:hint="repeat password"/>
     <Button
         android:layout_below="@id/create_password_repeat"
         android:id="@+id/create_submit_button"

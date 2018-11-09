@@ -179,5 +179,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void phone(View view) {
+        Intent intent = new Intent(this, Phone.class);
+        startActivity(intent);
+    }
+
 }
 
