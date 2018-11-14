@@ -17,6 +17,7 @@
         android:layout_marginBottom="16dp"
         android:hint="email"
         android:background="#11000000"
+        android:layout_marginLeft="15dp"
         android:drawableLeft="@drawable/ic_action_email"
 
 
@@ -33,6 +34,8 @@
         android:drawableLeft="@drawable/ic_action_password"
         android:layout_marginBottom="16dp"
         android:hint="password"
+        android:layout_marginLeft="15dp"
+
         />
 
     <TextView
@@ -56,49 +59,44 @@
         />
 
     <Button
-        android:id="@+id/buttontwo"
-        android:text="Signin"
-        android:onClick="signIn"
+        android:id="@+id/buttonone"
+        android:text="Forgot Password?"
+        android:onClick="resetPassword"
         android:layout_below="@id/statusText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:textColor="#3799ef"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse" />
+        />
+
+    <Button
+        android:id="@+id/buttontwo"
+        android:text="Signin"
+        android:onClick="signIn"
+        android:layout_below="@id/buttonone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:background="#3799ef"
         android:textColor="#ffffff"
         />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
 
     <Button
         android:id="@+id/buttonthree"
-        android:text="Signout"
-        android:onClick="signOut"
-        android:layout_below="@id/buttontwo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="#3799ef"
-        android:textColor="#ffffff"
-
-        />
-
-    <Button
-        android:id="@+id/buttonsix"
-        android:text="Reset Password"
-        android:onClick="resetPassword"
-        android:layout_below="@id/buttonthree"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="#3799ef"
-        android:textColor="#ffffff"
-
-        />
-
-    <Button
-        android:id="@+id/buttonfive"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:onClick="createAccount"
-        android:text="Create Account"
-        android:layout_below="@id/buttonsix"
+        android:text="Dont have an account yet?\nCreate Account"
+        android:layout_below="@id/buttontwo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -106,8 +104,8 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse"
         />
     <Button
-        android:id="@+id/buttonnine"
-        android:layout_below="@id/buttonfive"
+        android:id="@+id/buttonfour"
+        android:layout_below="@id/buttonthree"
         android:onClick="phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

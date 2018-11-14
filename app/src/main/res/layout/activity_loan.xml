@@ -14,12 +14,9 @@
         android:layout_height="wrap_content"
         android:text="Welcome to bashi!"
         android:textColor="#3799ef"
-        android:textSize="33dp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteY="28dp"
-        tools:layout_editor_absoluteX="152dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="57dp" />
 
     <EditText

@@ -11,18 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".Index" />
+        <activity android:name=".Phone" />
+        <activity android:name=".Loan" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".Index" />
-        <activity android:name=".Phone" />
-        <activity android:name=".Loan"></activity>
+        <activity android:name=".How_it_works"  android:parentActivityName=".Index"/>
+        <activity android:name=".Customer_care" android:parentActivityName=".Index">
+
+        </activity>
     </application>
 
 </manifest>
