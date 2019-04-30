@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.bashi.BVN">
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/auth_method_button_drawablePadding"
+        android:padding="@dimen/auth_method_button_drawablePadding"
+        android:background="#70303f9f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/bvn_user_name"
+            android:layout_margin="@dimen/auth_method_button_drawablePadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="BVN"
+            android:layout_below="@id/bvn_user_name"
+            android:id="@+id/bvn_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:visibility="gone"
+            android:layout_below="@id/bvn_edit_text"
+            android:id="@+id/bvn_button"
+            android:layout_width="match_parent"
+            android:text="verify Account"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_below="@id/bvn_button"
+            android:id="@+id/bvn_button_two"
+            android:layout_width="match_parent"
+            android:text="verify bvn"
+            android:onClick="checkBVN"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/bvn_progress"
+            android:layout_below="@id/bvn_button"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="blist">
+        <item>FCMB_NG</item>
+        <item>ZENITH_NG</item>
+        <item>ACCESS_NG</item>
+        <item>GTBANK_NG</item>
+        <item>ECOBANK_NG</item>
+        <item>DIAMOND_NG</item>
+        <item>PROVIDUS_NG</item>
+        <item>UNITY_NG</item>
+        <item>STANBIC_NG</item>
+        <item>STERLING_NG</item>
+        <item>PARKWAY_NG</item>
+        <item>AFRIBANK_NG</item>
+        <item>ENTREPRISE_NG</item>
+        <item>FIDELITY_NG</item>
+        <item>HERITAGE_NG</item>
+        <item>KEYSTONE_NG</item>
+        <item>SKYE_NG</item>
+        <item>STANCHART_NG</item>
+        <item>UNION_NG</item>
+        <item>UBA_NG</item>
+        <item>WEMA_NG</item>
+        <item>FIRST_NG</item>
+    </string-array>
+</resources>

@@ -38,20 +38,16 @@ public class Index extends AppCompatActivity {
         fbAuth = FirebaseAuth.getInstance();
         final DatabaseReference mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("user_details");
         final DatabaseReference currentRef = mDatabaseReference.child(userID);
-        DatabaseReference lnameRef = currentRef.child("lname");
         currentRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Log.d("<<<<<<<<<<<<<", "onDataChange: "+dataSnapshot.getValue());
-                try{
-                    JSONObject jsonObject = new JSONObject(dataSnapshot.getValue().toString());
-                    lname = jsonObject.getString("lname");
-                    fname = jsonObject.getString("fname");
-                    mProgressBar.setVisibility(View.GONE);
-                    textView.setText("Welcome "+lname+" "+fname);
-                }catch (Exception e){
-                    Log.d(">>>>>>>>", "onCreate: "+e);
-                }
+                lname = dataSnapshot.child("lname").getValue().toString();
+                fname = dataSnapshot.child("fname").getValue().toString();
+                mProgressBar.setVisibility(View.GONE);
+                textView.setVisibility(View.VISIBLE);
+                textView.setText("Welcome "+lname+" "+fname);
+                
             }
 
             @Override
@@ -63,7 +59,7 @@ public class Index extends AppCompatActivity {
     }
 
     public void Applyloan(View view) {
-        Intent intent = new Intent(this, Loan.class);
+        Intent intent = new Intent(this, BVN.class);
         startActivity(intent);
     }
 
@@ -75,6 +71,10 @@ public class Index extends AppCompatActivity {
         Intent intent = new Intent(this, Customer_care.class);
         startActivity(intent);
     }
+    public void Debt(View view) {
+        Intent intent = new Intent(this, Debt.class);
+        startActivity(intent);
+    }
 
     public void signOut(View view) {
         fbAuth.signOut();
@@ -82,5 +82,10 @@ public class Index extends AppCompatActivity {
         editor.clear();
         editor.apply();
         startActivity(new Intent(this, MainActivity.class));
+    }
+
+    public void openLoanHistory(View view) {
+        Intent intent = new Intent(this, Records.class);
+        startActivity(intent);
     }
 }

@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Bashi</string>
+    <string name="app_name">loan</string>
+
+    <string name="terms">
+        This Agreement is a financial services and an end-user licence agreement between you and Branch International Limited of a company duly incorporated under the laws of the Federal Republic of Nigeria with a company registration number CPR/2015/183658
+        Bashi reviews your credit report and requests for confidential informations such as BVN, account details. This Agreement sets out the complete terms and conditions which shall be applicable to the Account opened by you with BIL. These Terms and Conditions and any amendments or variations thereto take effect on their date of publication.
+
+
+
+
+    </string>
+
+
+    <string name="how">
+        Bashi is a digital loaning mobile application that users can use to apply for a loan instantly. A user needs to provide vital and necessary details into the application and the loan will be automatically processed, and if qualified the user will be issued out the loan. Some of the details include BVN, account number, and other details. The user is obligated to pay back the loan at an allocated time usually after a month with interest. "
+
+
+    </string>
+
 </resources>

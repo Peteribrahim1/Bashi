@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.bashi.Refund">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/refund_pane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/body_padding_bottom"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/account_name_refund"
+                android:hint="Account Name"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auth_method_button_marginBottom"/>
+            <EditText
+                android:id="@+id/account_number_refund"
+                android:hint="Account Number"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auth_method_button_marginBottom" />
+            <Spinner
+                android:id="@+id/bank_refund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auth_method_button_marginBottom" />
+            <DatePicker
+                android:id="@+id/date_of_birth"
+                android:hint="Date Of Birth"
+                android:visibility="gone"
+                android:inputType="date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auth_method_button_marginBottom" />
+            <EditText
+                android:id="@+id/amount_refund"
+                android:hint="Amount"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auth_method_button_marginBottom" />
+            <Button
+                android:id="@+id/refund_buttton"
+                android:text="Pay"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/cardview_light_background"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auth_method_button_marginBottom" />
+            <ProgressBar
+                android:id="@+id/progress_bar_refund"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -5,17 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context="com.example.hp.bashi.How_it_works">
+    tools:context="com.example.hp.bashi.Terms">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="normal"
-        android:textSize="20sp"
-        android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/terms"
+        android:text="@string/terms"
         android:background="@drawable/bluep"
-        android:text="@string/how"/>
-
+        android:padding="20dp"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        />
 </android.support.constraint.ConstraintLayout>

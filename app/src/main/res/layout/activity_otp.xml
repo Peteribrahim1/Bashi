@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.bashi.OTP">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/auth_method_button_marginBottom"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/otp_edit"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter OTP"
+            android:padding="@dimen/auth_method_button_marginBottom"
+            android:layout_margin="@dimen/auth_method_button_marginBottom"
+            />
+        <Button
+            android:id="@+id/otp_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send OTP"
+            android:padding="@dimen/auth_method_button_marginBottom"
+            android:layout_margin="@dimen/auth_method_button_marginBottom"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/cardview_light_background"
+            android:onClick="sendOTP"
+            />
+        <ProgressBar
+            android:id="@+id/progress_bar_otp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

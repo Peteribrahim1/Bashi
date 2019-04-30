@@ -15,7 +15,9 @@
         <activity android:name=".CreateAccountActivity" />
         <activity android:name=".Index" />
         <activity android:name=".Phone" />
-        <activity android:name=".Loan" />
+        <activity
+            android:name=".Loan"
+            android:parentActivityName=".Index" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,10 +25,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".How_it_works"  android:parentActivityName=".Index"/>
-        <activity android:name=".Customer_care" android:parentActivityName=".Index">
-
-        </activity>
+        <activity
+            android:name=".How_it_works"
+            android:parentActivityName=".Index" />
+        <activity
+            android:name=".Customer_care"
+            android:parentActivityName=".Index" />
+        <activity
+            android:name=".Debt"
+            android:parentActivityName=".Index" />
+        <activity
+            android:name=".Records"
+            android:parentActivityName=".Index" />
+        <activity
+            android:name=".Refund"
+            android:parentActivityName=".Debt" />
+        <activity android:name=".OTP" />
+        <activity android:name=".Terms" />
+        <activity android:name=".BVN"
+            android:parentActivityName=".Index"></activity>
     </application>
 
 </manifest>
