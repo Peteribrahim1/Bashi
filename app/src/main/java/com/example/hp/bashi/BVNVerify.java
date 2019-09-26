@@ -35,7 +35,7 @@ public class BVNVerify  extends AsyncTask<String, Void, String> implements Netwo
     protected String doInBackground(String... strings) {
         String localstr = "";
         try {
-            url = new URL(host+"/bvn-respond.php?bvn="+
+            url = new URL("http://bashiv2.000webhostapp.com"+"/bvn-respond.php?bvn="+
                     strings[0].trim());
 
             httpURLConnection = (HttpURLConnection) url.openConnection();

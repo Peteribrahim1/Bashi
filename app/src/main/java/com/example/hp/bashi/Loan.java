@@ -3,6 +3,8 @@ package com.example.hp.bashi;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -49,7 +51,12 @@ public class Loan extends AppCompatActivity implements AdapterView.OnItemSelecte
         bvnEditText = (EditText)findViewById(R.id.bvn);
         bvn = bvnEditText.getText().toString();
 
+        SharedPreferences mSharedPreferences = getSharedPreferences("BASHI_SHARED_PREFERENCE", MODE_PRIVATE);
+        float maxAmout = mSharedPreferences.getFloat("income", 0f);
+
         amountEditText = (EditText)findViewById(R.id.amount);
+        amountEditText.setFilters(new InputFilter[]{new InputFilterMax((int)maxAmout)});
+        Toast.makeText(getBaseContext(), "Your credit limit is"+maxAmout, Toast.LENGTH_LONG).show();
 
         spinner = (Spinner)findViewById(R.id.spinner);
         mButton = (Button)findViewById(R.id.apply);
@@ -143,5 +150,28 @@ public class Loan extends AppCompatActivity implements AdapterView.OnItemSelecte
 
             }
         });
+    }
+    public class InputFilterMax implements android.text.InputFilter{
+        private  int max;
+        public InputFilterMax(int max){
+            this.max=max;
+        }
+
+        @Override
+        public CharSequence filter(CharSequence charSequence, int i, int i1, Spanned spanned, int i2, int i3) {
+            try {
+                int input = Integer.parseInt(spanned.toString()+charSequence.toString());
+                if(isInRange(0, max, input)){
+                    return null;
+                }
+            }catch ( NumberFormatException e){
+
+            }
+            return "";
+        }
+
+        private boolean isInRange(int a, int b, int c){
+            return b>a?c>=a&&c<=b:c>=b &&c<=a;
+        }
     }
 }

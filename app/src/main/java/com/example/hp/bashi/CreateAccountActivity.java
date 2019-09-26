@@ -81,7 +81,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                     currentDatabaseReference.child("lname").setValue(lastname.getText().toString());
                     currentDatabaseReference.child("fname").setValue(othernames.getText().toString());
                     currentDatabaseReference.child("occupation").setValue(occupation.getText().toString());
-                    currentDatabaseReference.child("state").setValue(mState.getText().toString());
+                    currentDatabaseReference.child("income").setValue(mState.getText().toString());
                     currentDatabaseReference.child("email").setValue(mEditTextEmail.getText().toString());
                     Toast.makeText(getApplicationContext(), "Account creation successful",Toast.LENGTH_SHORT).show();
                     Intent mIntent  = new Intent(getApplicationContext(), MainActivity.class);

@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -44,9 +45,14 @@ public class Index extends AppCompatActivity {
                 Log.d("<<<<<<<<<<<<<", "onDataChange: "+dataSnapshot.getValue());
                 lname = dataSnapshot.child("lname").getValue().toString();
                 fname = dataSnapshot.child("fname").getValue().toString();
+                float income = Float.parseFloat(dataSnapshot.child("income").getValue().toString());
                 mProgressBar.setVisibility(View.GONE);
                 textView.setVisibility(View.VISIBLE);
                 textView.setText("Welcome "+lname+" "+fname);
+                SharedPreferences.Editor editor = mSharedPreferences.edit();
+                editor.putFloat("income", income*0.1f);
+                editor.apply();
+
                 
             }
 

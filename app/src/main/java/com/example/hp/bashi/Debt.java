@@ -41,7 +41,7 @@ public class Debt extends AppCompatActivity {
                 debt +=  (cc *0.1f)+cc;
                 }
                 float total = refund-debt;
-                textView.setText("Your current debt + 10% interest is "+total);
+                textView.setText("Your current debt + 10% interest to be paid back in a month is "+total);
             }
 
             @Override
